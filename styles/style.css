@@ -9,18 +9,134 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Шапка страницы */
+
 .header {
-  height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  height: 756px;
   /* выше установили ограничения для секции */
+  background: #f2f2f2;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.header_place_position {
+  position: absolute;
 }
+
+.header__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: inherit;
+}
+
+.logo__place_header {
+  width: 228px;
+  height: 32px;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 600;
+  margin-left: 64px;
+}
+
+.header__subtitle {
+  width: 388px;
+  bottom: 30px;
+  left: 64px;
+}
+
+.header__link {
+  line-height: 25px;
+  font-size: 18px;
+  font-style: normal;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__main_illustration {
+  width: 765px;
+  height: 608px;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+}
+
+.header__square_pic {
+  width: 568px;
+  height: 568px;
+  background: #2f80ed;
+  top: 64px;
+  right: 0;
+}
+
+/* Контент */
+
+/* Главные проблемы в обучении */
+
+.two__columns {
+  width: 80%;
+  padding-top: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two__columns_brief {
+  width: 175px;
+  color: #2f80ed;
+  line-height: 1.2;
+  font-style: normal;
+  font-size: 18px;
+  flex-basis: 175px;
+}
+
+.two__columns_main_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  min-width: 784px;
+  /* Высота блока = (кол-во строк * высоту строки) + 60 = 332 */
+  min-height: calc((8*34px) + 60px);
+}
+
+.two__columns_paragraph {
+  margin: 0;
+  line-height: 34px;
+  font-style: normal;
+  font-size: 24px;
+  flex-wrap: wrap;
+}
+
+.two__columns_span-accent {
+  line-height: 34px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
