@@ -23,13 +23,13 @@
   z-index: 1;
 }
 
-.header_place_position {
-  position: absolute;
-}
-
-.logo__place_header {
+.logo {
   width: 228px;
   height: 32px;
+}
+
+.logo_place_header {
+  position: absolute;
   top: 30px;
   left: 64px;
 }
@@ -44,6 +44,7 @@
 
 .header__subtitle {
   width: 388px;
+  position: absolute;
   bottom: 30px;
   left: 64px;
   margin: 0;
@@ -57,18 +58,20 @@
   color: #2f80ed;
 }
 
-.header__main_illustration {
+.header__main-illustration {
   width: 765px;
   height: 608px;
+  position: absolute;
   right: 0;
   bottom: 0;
 }
 
-.header__square_pic {
+.header__square-pic {
   width: 568px;
   height: 568px;
   z-index: -1;
   background: #2f80ed;
+  position: absolute;
   top: 64px;
   right: 0;
 }
@@ -77,7 +80,7 @@
 
 /* Главные проблемы в обучении */
 
-.two__columns {
+.two-columns {
   width: 80%;
   padding-top: 100px;
   margin: 0 auto;
@@ -86,7 +89,7 @@
   align-items: flex-start;
 }
 
-.two__columns_brief {
+.two-columns__brief {
   width: 175px;
   margin: 0;
   color: #2f80ed;
@@ -95,7 +98,7 @@
   font-size: 18px;
 }
 
-.two__columns_main_text {
+.two-columns__main-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -105,7 +108,7 @@
   min-height: calc((8*34px) + 60px);
 }
 
-.two__columns_paragraph {
+.two-columns__paragraph {
   margin: 0;
   line-height: 34px;
   font-weight: normal;
@@ -113,7 +116,7 @@
   flex-wrap: wrap;
 }
 
-.two__columns_span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-weight: 600;
   font-size: 24px;
@@ -181,7 +184,7 @@
   display: none;
 }
 
-/* Цифры и факты */
+/* Метод Фейнмана */
 
 .feynman {
   background: #f2f2f2 url(../images/feynman.png) bottom left no-repeat;
@@ -191,7 +194,7 @@
   position: relative;
 }
 
-.feynmam__title {
+.feynman__title {
   width: 648px;
   padding: 0;
   margin: 0 auto;
@@ -248,11 +251,11 @@
   margin-top: 80px;
 }
 
-.table__theme_dark {
+.table_theme_dark {
   position: relative;
 }
 
-.section__title_theme_dark {
+.section-title_theme_dark {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -262,7 +265,7 @@
   width: 60%;
 }
 
-.section__subtitle_theme_dark {
+.section-subtitle_theme_dark {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -306,17 +309,12 @@
   justify-content: space-between;
 }
 
-.logo_place_footer {
-  width: 228px;
-  height: 32px;
-}
-
 .footer__author {
   margin: 18px;
   color: white;
 }
 
-.footer__column_heading {
+.footer__column-heading {
   margin: 0 0 20px;
   line-height: 30px;
   font-size: 18px;
@@ -324,13 +322,13 @@
   color: white;
 }
 
-.footer__column_links {
+.footer__column-links {
   display: flex;
   flex-direction: column;
   margin: 0 0 16px;
 }
 
-.footer__column_link {
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -338,7 +336,7 @@
   color: white;
 }
 
-.footer__social_icon {
+.footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
