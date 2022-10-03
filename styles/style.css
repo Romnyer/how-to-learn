@@ -9,27 +9,22 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Шапка страницы */
+/* Шапка */
 
 .header {
+  height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  height: 756px;
   /* выше установили ограничения для секции */
   background: #f2f2f2;
   position: relative;
+  display: flex;
+  align-items: center;
   z-index: 1;
 }
 
 .header_place_position {
   position: absolute;
-}
-
-.header__column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: inherit;
 }
 
 .logo__place_header {
@@ -44,13 +39,14 @@
   font-size: 102px;
   line-height: 96px;
   font-weight: 600;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
 }
 
 .header__subtitle {
   width: 388px;
   bottom: 30px;
   left: 64px;
+  margin: 0;
 }
 
 .header__link {
@@ -64,7 +60,6 @@
 .header__main_illustration {
   width: 765px;
   height: 608px;
-  z-index: 1;
   right: 0;
   bottom: 0;
 }
@@ -72,6 +67,7 @@
 .header__square_pic {
   width: 568px;
   height: 568px;
+  z-index: -1;
   background: #2f80ed;
   top: 64px;
   right: 0;
@@ -236,8 +232,6 @@
 }
 
 .kaufman__triangle {
-  /* background: url(kaufman-triangle.svg) top right no-repeat;
-  background-size: 877px 877px; */
   width: 877px;
   height: 877px;
   position: absolute;
@@ -288,4 +282,64 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+
+/* Подвал */
+
+.footer {
+  background: #1f1f1f;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 250px;
+  padding: 60px 0 40px;
+  margin: 0 auto;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
+  width: 228px;
+  height: 32px;
+}
+
+.footer__author {
+  margin: 18px;
+  color: white;
+}
+
+.footer__column_heading {
+  margin: 0 0 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer__column_links {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 16px;
+}
+
+.footer__column_link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__social_icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }

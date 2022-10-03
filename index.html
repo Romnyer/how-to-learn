@@ -17,14 +17,11 @@
     <!--Шапка страницы-->
 
     <header class="header">
-      <!--Флекс столбец-->
       <img src="/images/logo_place_header.svg"
       class="logo__place_header header_place_position"
-      alt="Логотип">
+      alt="Логотип Яндекс Практикум">
 
-      <div class="header__column">
-        <h1 class="header__title">Научиться учиться</h1>
-      </div>
+      <h1 class="header__title">Научиться учиться</h1>
 
       <p class="header__subtitle header_place_position">
         Какие современные и эффективные<br>
@@ -50,7 +47,7 @@
         <div class="two__columns">
           <h2 class="two__columns_brief" id="content_start">Главные проблемы в обучении</h2>
 
-          <section class="two__columns_main_text">
+          <div class="two__columns_main_text">
             <p class="two__columns_paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы
               готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи,
               чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка
@@ -68,7 +65,7 @@
               Практикуме.
             </p>
 
-          </section>
+          </div>
         </div>
       </section>
 
@@ -138,9 +135,12 @@
       <!--Принципы обучения-->
 
       <section class="kaufman" id="kaufman">
-        <!-- <div class="kaufman__triangle"></div> -->
-        <img class="kaufman__triangle" src="/kaufman-triangle.svg" alt="Декоративный треугольник на фоне">
+        <img class="kaufman__triangle"
+        src="/images/kaufman-triangle.svg"
+        alt="Декоративный треугольник на фоне">
+
         <h2 class="section__title section__title_theme_dark">Принципы обучения</h2>
+
         <h3 class="section__subtitle section__subtitle_theme_dark">от Джоша Кауфмана</h3>
 
         <ul class="table table__theme_dark">
@@ -202,7 +202,39 @@
     <!--Подвал-->
 
     <footer class="footer">
+      <div class="footer__columns">
 
+        <div class="footer__column_content_copyright">
+          <img src="/images/logo_place_footer.svg" class="logo_place_footer" alt="Логотип Яндекс Практикум">
+          <div class="footer__author">&copy; Артём Красильников</div>
+        </div>
+
+        <div class="footer__column_content_info">
+          <h2 class="footer__column_heading">О Практикуме</h2>
+          <p class="footer__column_links">
+            <a href="#" class="footer__column_link">Главная</a>
+            <a href="#" class="footer__column_link">Концепция</a>
+            <a href="#" class="footer__column_link">Наставники</a>
+          </p>
+        </div>
+
+        <div class="footer__column_content_social">
+          <h2 class="footer__column_heading">Соцсети</h2>
+
+          <p class="footer__column_links">
+            <a href="#" class="footer__column_link">
+              <img src="/images/youtube-icon.svg" class="footer__social_icon" alt="Иконка Ютуб">YouTube
+            </a>
+            <a href="#" class="footer__column_link">
+              <img src="/images/vk_color_white.svg" class="footer__social_icon" alt="Иконка ВК">ВКонтакте
+            </a>
+            <a href="#" class="footer__column_link">
+              <img src="/images/tiktok-icon.svg" class="footer__social_icon" alt="Иконка ТикТок">TikTok
+            </a>
+          </p>
+
+        </div>
+      </div>
     </footer>
   </div>
 </body>
