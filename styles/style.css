@@ -35,7 +35,7 @@
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
   font-size: 102px;
   line-height: 96px;
   font-weight: 600;
@@ -43,7 +43,9 @@
 }
 
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
+  font-size: 18px;
+  line-height: 25px;
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -53,7 +55,6 @@
 .header__link {
   line-height: 25px;
   font-size: 18px;
-  font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
 }
@@ -64,12 +65,14 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: -1;
+  object-fit: cover;
 }
 
 .header__square-pic {
   width: 568px;
   height: 568px;
-  z-index: -1;
+  z-index: -2;
   background: #2f80ed;
   position: absolute;
   top: 64px;
@@ -90,7 +93,7 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
   margin: 0;
   color: #2f80ed;
   line-height: 1.2;
@@ -102,7 +105,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 80%;
+  max-width: 80%;
   min-width: 784px;
   /* Высота блока = (кол-во строк * высоту строки) + 60 = 332 */
   min-height: calc((8*34px) + 60px);
@@ -111,9 +114,12 @@
 .two-columns__paragraph {
   margin: 0;
   line-height: 34px;
-  font-weight: normal;
   font-size: 24px;
   flex-wrap: wrap;
+}
+
+.two-columns__paragraph:nth-of-type(2) {
+  margin: 30px 0;
 }
 
 .two-columns__span-accent {
@@ -130,7 +136,7 @@
 }
 
 .section-title {
-  width: 60%;
+  max-width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -139,25 +145,12 @@
 }
 
 .section-subtitle {
-  width: 60%;
+  max-width: 60%;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   margin: 0 auto;
   text-align: center;
-}
-
-.table__heading {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0 0 20px;
-}
-
-.table__text {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .table {
@@ -176,12 +169,17 @@
   padding: 0;
 }
 
-.table__cell-span {
-  margin: 20px 0 0;
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
 }
 
-.table__cell::before {
-  display: none;
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  margin: 20px 0 0;
 }
 
 /* Метод Фейнмана */
@@ -190,12 +188,12 @@
   background: #f2f2f2 url(../images/feynman.png) bottom left no-repeat;
   background-size: 867px 637px;
   padding-top: 100px;
-  height: 790px;
+  min-height: 790px;
   position: relative;
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   padding: 0;
   margin: 0 auto;
   text-align: center;
@@ -232,15 +230,37 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  z-index: -2;
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: 877px 877px;
   width: 877px;
   height: 877px;
   position: absolute;
   right: -210px;
   top: 0;
-  z-index: 0;
+  z-index: -1;
+}
+
+.section-title_theme_dark {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 60%;
+}
+
+.section-subtitle_theme_dark {
+  line-height: 34px;
+  font-size: 24px;
+  color: white;
+  margin: 20px auto 0;
+  text-align: center;
+  max-width: 60%;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -255,26 +275,6 @@
   position: relative;
 }
 
-.section-title_theme_dark {
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  color: white;
-  margin: 0 auto;
-  text-align: center;
-  width: 60%;
-}
-
-.section-subtitle_theme_dark {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  color: white;
-  margin: 20px auto 0;
-  text-align: center;
-  width: 60%;
-}
-
 .table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
@@ -284,7 +284,6 @@
 .table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
-  font-weight: normal;
 }
 
 /* Подвал */
@@ -310,7 +309,9 @@
 }
 
 .footer__author {
-  margin: 18px;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 18px 0;
   color: white;
 }
 
@@ -331,7 +332,6 @@
 .footer__column-link {
   line-height: 30px;
   font-size: 18px;
-  font-weight: normal;
   text-decoration: none;
   color: white;
 }

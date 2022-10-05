@@ -44,7 +44,7 @@
       <!--Главные проблемы в обучении-->
 
       <section class="description">
-        <div class="two-columns">
+        <article class="two-columns">
           <h2 class="two-columns__brief" id="content_start">Главные проблемы в обучении</h2>
 
           <div class="two-columns__main-text">
@@ -66,14 +66,14 @@
             </p>
 
           </div>
-        </div>
+        </article>
       </section>
 
       <!--Цифры и факты-->
 
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
-        <h3 class="section-subtitle">Про учёбу и мозг</h3>
+        <p class="section-subtitle">Про учёбу и мозг</p>
 
         <ul class="table">
 
@@ -85,7 +85,7 @@
           <li class="table__cell">
             <h3 class="table__heading">2.1 миллиарда</h3>
             <p class="table__text">Число нуждающихся в повышении квалификации</p>
-            <p class="table__text table__cell-span">Всемирный Банк, 2017</p>
+            <p class="table__text">Всемирный Банк, 2017</p>
           </li>
 
           <li class="table__cell">
@@ -103,7 +103,7 @@
             <p class="table__text">
               Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства
             </p>
-            <p class="table__text table__cell-span">Всемирный Банк, 2017</p>
+            <p class="table__text">Всемирный Банк, 2017</p>
           </li>
 
           <li class="table__cell">
@@ -128,16 +128,14 @@
 
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
-        <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a href="#kaufman" class="feynman__link">Подробнее &rarr;</a>
       </section>
 
       <!--Принципы обучения-->
 
       <section class="kaufman" id="kaufman">
-        <img class="kaufman__triangle"
-        src="./images/kaufman-triangle.svg"
-        alt="Декоративный треугольник на фоне">
+        <div class="kaufman__triangle"></div>
 
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
 
@@ -206,22 +204,22 @@
 
         <div class="footer__column footer__column_content_copyright">
           <img src="./images/logo_place_footer.svg" class="logo logo_place_footer" alt="Логотип Яндекс Практикум">
-          <div class="footer__author">&copy; Артём Красильников</div>
+          <p class="footer__author">&copy; Артём Красильников</p>
         </div>
 
-        <div class="footer__column footer__column_content_info">
+        <nav class="footer__column footer__column_content_info">
           <h2 class="footer__column-heading">О Практикуме</h2>
-          <p class="footer__column-links">
+          <div class="footer__column-links">
             <a href="#" class="footer__column-link">Главная</a>
             <a href="#" class="footer__column-link">Концепция</a>
             <a href="#" class="footer__column-link">Наставники</a>
-          </p>
-        </div>
+          </div>
+        </nav>
 
         <div class="footer__column footer__column_content_social">
           <h2 class="footer__column-heading">Соцсети</h2>
 
-          <p class="footer__column-links">
+          <div class="footer__column-links">
             <a href="#" class="footer__column-link">
               <img src="./images/youtube-icon.svg" class="footer__social-icon" alt="Иконка Ютуб">YouTube
             </a>
@@ -231,7 +229,7 @@
             <a href="#" class="footer__column-link">
               <img src="./images/tiktok-icon.svg" class="footer__social-icon" alt="Иконка ТикТок">TikTok
             </a>
-          </p>
+          </div>
         </div>
 
       </div>
