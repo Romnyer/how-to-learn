@@ -1,0 +1,13 @@
+.header__link {
+  line-height: 25px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #2f80ed;
+  transition-property: opacity;
+  transition-duration: 0.75s;
+  transition-timing-function: cubic-bezier(0.25, 0, 0.25, 2);
+}
+
+.header__link:hover {
+  opacity: 0.75;
+}
