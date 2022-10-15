@@ -1,0 +1,45 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/page/page.css);
+
+/* Шапка */
+@import url(../blocks/header/header.css);
+@import url(../blocks/rotation/rotation.css);
+
+/* Логотип */
+@import url(../blocks/logo/logo.css);
+
+/* Контент */
+
+/* Главные проблемы в обучении */
+@import url(../blocks/two-columns/two-columns.css);
+
+/* Техники обучения */
+@import url(../blocks/techniques/techniques.css);
+@import url(../blocks/cards/cards.css);
+
+/* Видео */
+@import url(../blocks/video/video.css);
+
+/* Оакли */
+@import url(../blocks/oakley/oakley.css);
+
+/* Хан */
+@import url(../blocks/khan/khan.css);
+
+/* Цифры и факты */
+@import url(../blocks/digits/digits.css);
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/table/table.css);
+
+/* Метод Фейнмана */
+@import url(../blocks/feynman/feynman.css);
+
+/* Принципы обучения */
+@import url(../blocks/kaufman/kaufman.css);
+
+/* Ресурсы */
+@import url(../blocks/resourses/resourses.css);
+
+/* Подвал */
+@import url(../blocks/footer/footer.css);
