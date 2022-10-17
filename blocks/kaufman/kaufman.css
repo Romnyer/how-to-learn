@@ -4,5 +4,5 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  z-index: -2;
+  z-index: 2;
 }

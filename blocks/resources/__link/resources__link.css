@@ -1,13 +1,9 @@
-.khan__buy-link {
-  color: #2f80ed;
-  text-decoration: none;
-  line-height: 42px;
-  font-size: 30px;
+.resources__link {
   transition-property: opacity;
   transition-duration: 0.75s;
   transition-timing-function: cubic-bezier(0.25, 0, 0.25, 2);
 }
 
-.khan__buy-link:hover {
+.resources__link:hover {
   opacity: 0.75;
 }

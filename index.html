@@ -118,11 +118,11 @@
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
 
         <div class="video__iframes">
-          <iframe class="video__iframe" width="515" height="316"
+          <iframe class="video__iframe"
             src="https://www.youtube.com/embed/5MgBikgcWnY?controls=0&hl=ru&modestbranding=1"
              allowfullscreen>
           </iframe>
-          <iframe class="video__iframe" width="515" height="316"
+          <iframe class="video__iframe"
             src="https://www.youtube.com/embed/arj7oStGLkU?controls=0&hl=ru&modestbranding=1"
              allowfullscreen>
           </iframe>
@@ -214,21 +214,21 @@
       <!--Хан-->
 
       <section class="khan">
-        <article class="khan__container">
-          <div class="khan__author">Салман Хан</div>
+        <div class="khan__container">
+          <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">
+          <blockquote class="khan__quote">
             Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру.
             Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием —
             так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
-          </p>
+          </blockquote>
           <h3 class="khan__quote-author">Джордж Лукас</h3>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="./images/khan-book.jpg" alt="Обложка книги">
-            <a class="khan__book-link" href="https://www.labirint.ru/books/483575/" target="_blank">Купить книгу &rarr;</a>
+            <a class="khan__buy-link" href="https://www.labirint.ru/books/483575/" target="_blank">Купить книгу &rarr;</a>
           </div>
-        </article>
+        </div>
       </section>
 
       <!--Принципы обучения-->
@@ -238,7 +238,7 @@
 
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
 
-        <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
+        <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
 
         <ul class="table table_theme_dark">
 
@@ -294,20 +294,36 @@
 
         </ul>
       </section>
-    </main>
 
     <!--Ресурсы-->
 
-    <section class="resourses">
+    <section class="resources">
       <h2 class="section-title">Полезные ресурсы</h2>
       <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-      <div class="resourses__logo-zone">
-        <a class="resourses__link" href="https://arzamas.academy" target="_blank"></a>
-        <a class="resourses__link" href="https://nplus1.ru" target="_blank"></a>
-        <a class="resourses__link" href="https://strelka.com" target="_blank"></a>
-        <a class="resourses__link" href="https://polka.academy" target="_blank"></a>
-      </div>
+      <ul class="resources__logo-zone">
+        <li>
+          <a class="resources__link" href="https://arzamas.academy" target="_blank">
+            <img class="resources__logo" src="./images/resources_logo/resources-arzamas.svg" alt="Логотип Арзамас">
+          </a>
+        </li>
+        <li>
+          <a class="resources__link" href="https://nplus1.ru" target="_blank">
+            <img class="resources__logo" src="./images/resources_logo/resources-n1.svg" alt="Логотип Н+1">
+          </a>
+        </li>
+        <li>
+          <a class="resources__link" href="https://strelka.com" target="_blank">
+            <img class="resources__logo" src="./images/resources_logo/resources-strelka.svg" alt="Логотип Стрелка">
+          </a>
+        </li>
+        <li>
+          <a class="resources__link" href="https://polka.academy" target="_blank">
+            <img class="resources__logo" src="./images/resources_logo/resources-polka.svg" alt="Логотип Полка">
+          </a>
+        </li>
+      </ul>
     </section>
+  </main>
 
     <!--Подвал-->
 
@@ -321,28 +337,40 @@
 
         <nav class="footer__column footer__column_content_info">
           <h2 class="footer__column-heading">О Практикуме</h2>
-          <div class="footer__column-links">
-            <a href="https://praktikum.yandex.ru/" class="footer__column-link" target="_blank">Главная</a>
-            <a href="#" class="footer__column-link">Концепция</a>
-            <a href="#" class="footer__column-link">Наставники</a>
-          </div>
+          <ul class="footer__column-links">
+            <li>
+              <a href="https://praktikum.yandex.ru/" class="footer__column-link" target="_blank">Главная</a>
+            </li>
+            <li>
+              <a href="#" class="footer__column-link" target="_blank">Концепция</a>
+            </li>
+            <li>
+              <a href="#" class="footer__column-link" target="_blank">Наставники</a>
+            </li>
+          </ul>
         </nav>
 
-        <div class="footer__column footer__column_content_social">
+        <nav class="footer__column footer__column_content_social">
           <h2 class="footer__column-heading">Соцсети</h2>
 
-          <div class="footer__column-links">
-            <a href="https://www.youtube.com/c/ЯндексПрактикум" class="footer__column-link" target="_blank">
-              <img src="./images/youtube-icon.svg" class="footer__social-icon" alt="Иконка Ютуб">YouTube
-            </a>
-            <a href="https://vk.com/yandex.practicum" class="footer__column-link" target="_blank">
-              <img src="./images/vk_color_white.svg" class="footer__social-icon" alt="Иконка ВК">ВКонтакте
-            </a>
-            <a href="#" class="footer__column-link">
-              <img src="./images/tiktok-icon.svg" class="footer__social-icon" alt="Иконка ТикТок">TikTok
-            </a>
-          </div>
-        </div>
+          <ul class="footer__column-links">
+            <li>
+              <a href="https://www.youtube.com/c/ЯндексПрактикум" class="footer__column-link" target="_blank">
+                <img src="./images/youtube-icon.svg" class="footer__social-icon" alt="Иконка Ютуб">YouTube
+              </a>
+            </li>
+            <li>
+              <a href="https://vk.com/yandex.practicum" class="footer__column-link" target="_blank">
+                <img src="./images/vk_color_white.svg" class="footer__social-icon" alt="Иконка ВК">ВКонтакте
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__column-link" target="_blank">
+                <img src="./images/tiktok-icon.svg" class="footer__social-icon" alt="Иконка ТикТок">TikTok
+              </a>
+            </li>
+          </ul>
+        </nav>
 
       </div>
     </footer>
